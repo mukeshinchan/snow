@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>apppy</title>
+    </head>
+    <body>
+        <h1>User Management Using Python Flask & SQL.................................</h1>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>CITY</th>
+                <th>EDIT</th>
+                <th>DELETE</th>
+            </tr>
+            {% for data_2 in data_1 %}
+            <tr>
+                <td>{{data_2[0]}}</td>
+                <td>{{data_2[1]}}</td>
+                <td>{{data_2[2]}}</td>
+                <td>{{data_2[3]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
